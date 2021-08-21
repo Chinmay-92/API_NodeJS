@@ -30,4 +30,18 @@ describe('AttainU mock authentication', () => {
         })
     })
   })
+
+  describe('CRUD', () => {
+    it('it should create a post when username and password are provided', (done) => {
+      request.agent(app)
+        .post('/users/post')
+        .set('token', token)
+        .send(loginDetails)
+        .end((err, res) => {
+          expect(res.statusCode).to.equal(200)
+          done()
+        })
+    })
+  })
+
 })
