@@ -1,0 +1,15 @@
+{
+  "name": "attainu",
+  "version": "1.0.0",
+  "description": "assignment nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "test"
+  },
+  "author": "Chinmay Pingale",
+  "license": "ISC"
+}
