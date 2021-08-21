@@ -2,14 +2,34 @@
   "name": "attainu",
   "version": "1.0.0",
   "description": "assignment nodeJS",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "mocha",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "test"
   },
   "author": "Chinmay Pingale",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "supertest": "^3.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "dotenv": "^6.0.0",
+    "mocha": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "nodemon": "^2.0.12"
+  }
 }
